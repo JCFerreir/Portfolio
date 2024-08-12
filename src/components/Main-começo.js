@@ -38,7 +38,7 @@ const MainComeço = () => {
                 <h1 className="titulo-começo">Para uma apresentação melhor...</h1>
 
                 <div className="conteudo-main-começo">
-                    <label className="label-começo">Qual seu nome?</label>
+                    <label className="label-começo">Digite seu nome</label>
                     <input 
                         type="text" 
                         className="form-control" 
