@@ -1,12 +1,11 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Footer-portfolio.css';
 
 const Footer = () => {
     return(
         <>
             <footer>
-                <div className="container">
+                <div className="container-footer">
                     <div className="direitos">
                         <a>JCF Dev © 2024</a>
                     </div>
