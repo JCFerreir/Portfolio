@@ -12,6 +12,9 @@ const MainComeço = () => {
         if (name) {
             navigate('/welcome', { state: { userName: name } });
         }
+        else{
+            alert('Primeiro escreva seu nome!')
+        }
     };
 
     // Comando para usar os efeitos do ScrollReveal

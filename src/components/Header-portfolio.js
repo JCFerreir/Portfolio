@@ -7,7 +7,7 @@ const Header = () => {
       <header>
         <div className="interface">
             <div className="logo">
-              <a href=""> <img src="/logo-portfolio.png" /></a>
+              <a href="/"> <img src="/logo-portfolio.png" /></a>
             </div>
 
         <nav className="menu-desktop">
@@ -20,7 +20,7 @@ const Header = () => {
 
         <div className="btn-contato"> 
           <a href="">
-            <button  data-bs-toggle="modal" data-bs-target="#exampleModal">Contato</button>
+            <button>Contato</button>
           </a>
         </div>
       </div>
