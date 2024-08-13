@@ -8,19 +8,23 @@ const Welcome = () => {
     const { userName } = location.state || { userName: 'Visitante' };
 
     return(
-        <>
+        < >
             <main>
                 <div className="container-cumprimento">
 
                     <div className="all-titulos-cumprimento">
                         <h1 className="titulo-cumprimento">Seja bem-vindo {userName}!</h1>
-                        <h2 className="subtitulo-cumprimento">Inovação e funcionalidade <br />em cada linha de código.</h2>
+                        <h2 className="subtitulo-cumprimento">Inovação e funcionalidade em <br />cada linha de código.</h2>
                     </div>
 
                     <div className="img-cumprimento">
                         <img className="img-notebook" src="/notebook-cumprimento.png" />
                         <img className="img-celular" src="/celular-cumprimento.png" />
                     </div>
+                </div>
+
+                <div className="teste">
+                    <p>teste</p>
                 </div>
             </main>
         </>
