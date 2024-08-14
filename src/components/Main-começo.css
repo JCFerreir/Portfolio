@@ -7,14 +7,13 @@
 .container-main-começo{
     max-width: 1280px;
     margin: 0 auto;
-    margin-top: 30vh;
+    margin-top: 50vh;
 }
 
 .conteudo-main-começo{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 30vh;
 }
 
 .titulo-começo{

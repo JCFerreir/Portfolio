@@ -2,9 +2,10 @@ import React from "react";
 import './Header-portfolio.css'
 
 const Header = () => {
+
   return (
     <>
-      <header>
+      <header id="header">
         <div className="interface">
             <div className="logo">
               <a href="/"> <img src="/logo-portfolio.png" /></a>
