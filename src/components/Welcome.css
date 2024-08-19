@@ -4,8 +4,7 @@
     --vinho-color: #800020;
 }
 
-
-main{
+main {
     margin-bottom: 70vh;
     margin-top: 30vh;
 }
@@ -13,24 +12,48 @@ main{
 .container-cumprimento {
     max-width: 1280px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
 }
 
-.all-titulos-cumprimento{
-    margin-top: 50vh;
+.imagem-cumprimento {
+    flex: 0.5;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: start; /* Alinha a imagem à esquerda */
+}
+
+.imagem-cumprimento img {
+    max-width: 60%; /* Ajusta a largura máxima da imagem */
+    height: auto;
+}
+
+.all-titulos-cumprimento {
+    flex: 1;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    text-align: end;
     flex-direction: column;
 }
 
-.titulo-cumprimento{
+.titulo-cumprimento {
     color: #fff;
     font-size: 41px;
 }
 
-.subtitulo-cumprimento{
+.subtitulo-cumprimento {
     color: #808080;
     font-size: 25px;
 }
+
+.btn-cumprimento{
+    width: 200px;
+    height: auto;
+    margin-top: 30px;
+}
+
+.custom-backdrop {
+    background-color: rgba(0, 0, 0, 0.3); /* Ajuste a cor e a opacidade conforme necessário */
+  }
