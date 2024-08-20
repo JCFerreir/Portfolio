@@ -30,7 +30,7 @@ const Welcome = () => {
 
                 <div className="all-titulos-cumprimento">
                     <h1 className="titulo-cumprimento">Seja bem-vindo ao meu Portfolio {userName}!</h1>
-                    <h2 className="subtitulo-cumprimento">Inovação em cada linha de código.</h2>
+                    <h2 className="subtitulo-cumprimento">Criando o futuro em cada linha de código.</h2>
 
                     <button type="button" className="btn btn-outline-danger btn-cumprimento" data-bs-toggle="modal" data-bs-target="#exampleModal">Curriculo</button>
                 </div>

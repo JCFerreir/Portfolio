@@ -21,7 +21,7 @@ const Header = () => {
 
         <div className="btn-contato"> 
           <a href="">
-            <button>Contato</button>
+            <button>Entre em Contato</button>
           </a>
         </div>
       </div>
