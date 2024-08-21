@@ -4,6 +4,7 @@
     --vinho-color: #800020;
 }
 
+/*footer*/
 footer{
     padding: 30px 4%;
     background-color: var(--preto-color);
@@ -58,7 +59,7 @@ footer nav ul li a i{
     background-color: var(--preto-color);
     color: var(--vinho-color);
 }
-
+/*final do footer*/
 
 
 

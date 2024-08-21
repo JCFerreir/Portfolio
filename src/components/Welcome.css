@@ -5,55 +5,32 @@
 }
 
 main {
-    margin-bottom: 70vh;
-    margin-top: 30vh;
+    margin-bottom: 30vh;
+    margin-top: 50vh;
 }
 
+/*cumprimento*/
 .container-cumprimento {
     max-width: 1280px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
 }
 
 .imagem-cumprimento {
-    flex: 0.5;
     display: flex;
     justify-content: start; /* Alinha a imagem à esquerda */
-    position: relative; /* Necessário para o posicionamento absoluto do hexágono */
-}
-
-.hexagon-background {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1; /* Coloca o hexágono atrás da imagem */
-    width: 300px; /* Ajuste conforme necessário */
-    height: 300px; /* Ajuste conforme necessário */
 }
 
 .imagem-cumprimento img {
-    max-width: 70%; /* Ajusta a largura máxima da imagem */
+    max-width: 100%; /* Ajusta a largura máxima da imagem */
     height: auto;
-    border-radius: 50vh;
-    position: relative; /* Garante que a imagem esteja acima do hexágono */
-    z-index: 2; /* Coloca a imagem na frente do hexágono */
+    transition: .2s;
 }
 
-.imagem-cumprimento::before {
-    content: "";
-    position: absolute;
-    margin-top: 45%;
-    left: 35%;
-    width: 500px;
-    height: 500px;
-    background-color: var(--vinho-color); /* Cor do hexágono */
-    transform: translate(-50%, -50%) rotate(90deg);
-    z-index: 1; /* Coloca o hexágono atrás da imagem */
-    clip-path: polygon(70% 0%, 100% 25%, 100% 75%, 70% 100%, 5% 75%, 5% 25%);
+.imagem-cumprimento img:hover{
+    transform: scale(1.05);
 }
 
 .all-titulos-cumprimento {
@@ -80,7 +57,29 @@ main {
     height: auto;
     margin-top: 30px;
 }
+/*final do cumprimento*/
 
+
+/*modal cv*/
 .custom-backdrop {
     background-color: rgba(0, 0, 0, 0.3); /* Ajuste a cor e a opacidade conforme necessário */
-  }
+}
+
+.modal-footer button, a{
+    background-color: var(--cinza-color);
+}
+
+.descricao-modal-footer{
+    color: #fff;
+    font-size: 30px;
+}
+/*final do modal cv*/
+
+/*about me*/
+.about-me{
+    background-color: var(--preto-color);
+    margin-top: 30vh;
+    width: 100%;
+    height: 80vh;
+}
+/*final about me*/

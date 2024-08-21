@@ -4,6 +4,7 @@
     --vinho-color: #800020;
 }
 
+/*conteúdo começo*/
 .container-main-começo{
     max-width: 1280px;
     margin: 0 auto;
@@ -35,3 +36,4 @@
 .container-main-começo{
     visibility: hidden;
 }
+/*final do conteúdo começo*/

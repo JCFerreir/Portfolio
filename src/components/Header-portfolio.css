@@ -5,6 +5,7 @@
     --transparente-color: #00000000;
 }
 
+/*header*/
 .interface{
     max-width: 1280px;
     margin: 0 auto;
@@ -74,3 +75,4 @@ header .btn-contato button:hover{
 .menu-desktop{
     background-color: var(--preto-color);
 }
+/*final do header*/
