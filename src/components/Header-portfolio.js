@@ -13,7 +13,7 @@ const Header = () => {
 
         <nav className="menu-desktop">
             <ul>
-              <li><a href="teste">Teste</a></li>
+              <li><a href="#sobre-mim">Sobre mim</a></li>
               <li><a href="teste">Teste</a></li>
               <li><a href="teste">Teste</a></li>
             </ul>

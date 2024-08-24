@@ -78,8 +78,19 @@ main {
 /*about me*/
 .about-me{
     background-color: var(--preto-color);
-    margin-top: 30vh;
+    margin-bottom: 50vh;
     width: 100%;
-    height: 80vh;
+}
+
+.conteudo-sobre-mim{
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: var(--preto-color);
+}
+
+.titulo-sobre-mim{
+    color: #fff;
+    font-size: 41px;
+    background-color: var(--preto-color);
 }
 /*final about me*/
