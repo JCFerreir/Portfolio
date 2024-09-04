@@ -76,7 +76,7 @@ main {
 /*final do modal cv*/
 
 /*about me*/
-.about-me{
+.sobre-mim{
     background-color: var(--preto-color);
     margin-bottom: 50vh;
     width: 100%;
@@ -85,12 +85,38 @@ main {
 .conteudo-sobre-mim{
     max-width: 1280px;
     margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: var(--preto-color);
 }
 
 .titulo-sobre-mim{
+    max-width: 1280px;
+    margin: 0 auto;
     color: #fff;
     font-size: 41px;
     background-color: var(--preto-color);
 }
+
+.texto-sobre-mim{
+    color: #fff;
+    font-size: 25px;
+    background-color:  var(--preto-color);
+    align-items: start;
+    justify-content: start;
+    text-align: start;
+}
+
+.imagem-sobre-mim{
+    background-color: var(--preto-color);
+}
+
+.imagem-sobre-mim img{
+    max-width: 600px;
+    border-radius: 80px;
+    background-color:  var(--preto-color);
+}
+
+
 /*final about me*/
