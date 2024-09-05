@@ -37,3 +37,9 @@
     visibility: hidden;
 }
 /*final do conteúdo começo*/
+
+/*media query*/
+@media screen and (max-width: 1020px){
+    
+}
+/*final do media query*/

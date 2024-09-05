@@ -11,7 +11,7 @@ main {
 
 /*cumprimento*/
 .container-cumprimento {
-    max-width: 1280px;
+    max-width: 1080px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -20,11 +20,10 @@ main {
 
 .imagem-cumprimento {
     display: flex;
-    justify-content: start; /* Alinha a imagem à esquerda */
 }
 
 .imagem-cumprimento img {
-    max-width: 100%; /* Ajusta a largura máxima da imagem */
+    max-width: 90%; /* Ajusta a largura máxima da imagem */
     height: auto;
     transition: .2s;
 }
@@ -37,19 +36,18 @@ main {
     flex: 1;
     display: flex;
     align-items: end;
-    justify-content: end;
     text-align: end;
     flex-direction: column;
 }
 
 .titulo-cumprimento {
     color: #fff;
-    font-size: 41px;
+    font-size: 36px;
 }
 
 .subtitulo-cumprimento {
     color: #808080;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .btn-cumprimento{
@@ -83,8 +81,12 @@ main {
 }
 
 .conteudo-sobre-mim{
-    max-width: 1280px;
+    max-width: 1080px;
     margin: 0 auto;
+    background-color: var(--preto-color);
+}
+
+.columns{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -92,7 +94,7 @@ main {
 }
 
 .titulo-sobre-mim{
-    max-width: 1280px;
+    max-width: 1080px;
     margin: 0 auto;
     color: #fff;
     font-size: 41px;
@@ -102,6 +104,7 @@ main {
 .texto-sobre-mim{
     color: #fff;
     font-size: 25px;
+    margin-right: 6%;
     background-color:  var(--preto-color);
     align-items: start;
     justify-content: start;
@@ -113,10 +116,112 @@ main {
 }
 
 .imagem-sobre-mim img{
-    max-width: 600px;
+    max-width: 400px;
     border-radius: 80px;
     background-color:  var(--preto-color);
 }
 
-
+.sobre-mim .imagem-sobre-mim img{
+    position: relative;
+    animation: flutuar 1.5s ease-in-out infinite alternate;
+}
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
 /*final about me*/
+
+
+/*media query*/
+
+@media screen and (max-width: 1020px){
+    /*cumprimento*/
+    .container-cumprimento {
+        flex-direction: column;
+        padding: 0 8%;
+    }
+
+    .all-titulos-cumprimento{
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    .container-cumprimento .imagem-cumprimento img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 20%;
+        margin-bottom: 10px;
+        max-width: 60%;
+    } 
+
+    .all-titulos-cumprimento .titulo-cumprimento{
+        font-size: 25px;
+    }
+
+    .all-titulos-cumprimento .subtitulo-cumprimento{
+        font-size: 15px;
+    }
+
+    .all-titulos-cumprimento .btn-cumprimento{
+        width: 100px;
+        height: auto;
+    }
+
+    /*sobre mim*/
+    .conteudo-sobre-mim{
+        flex-direction: column;
+        padding: 0 8%;
+    }
+
+    .titulo-sobre-mim{
+        font-size: 25px;
+    }
+
+    .texto-sobre-mim{
+        font-size: 16px;
+    }
+
+    .imagem-sobre-mim img{
+        max-width: 250px;
+    }
+}
+
+    @media screen and (max-width: 1220px){
+        /*cumprimento*/
+        .container-cumprimento {
+            flex-direction: column;
+        }
+
+
+
+        .all-titulos-cumprimento{
+            display: flex;
+            text-align: center;
+            align-items: center;
+        }
+
+        /*sobre mim*/
+        .conteudo-sobre-mim .columns{
+            flex-direction: column;
+        }
+
+        .titulo-sobre-mim{
+            display: flex;
+            justify-content: center;
+        }
+
+        .texto-sobre-mim{
+            display: flex;
+            text-align: center;
+        }
+
+    }
+/*final do media query*/
+
