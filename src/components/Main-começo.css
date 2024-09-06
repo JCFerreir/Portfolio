@@ -6,7 +6,7 @@
 
 /*conteúdo começo*/
 .container-main-começo{
-    max-width: 1280px;
+    max-width: 850px;
     margin: 0 auto;
     margin-top: 50vh;
 }
@@ -40,6 +40,30 @@
 
 /*media query*/
 @media screen and (max-width: 1020px){
-    
+    .titulo-começo{
+        font-size: 25px;
+    }
+
+    .label-começo{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1220px){
+    .container-main-começo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .btn-começo{
+        max-width: 150px;
+        height: auto;
+        margin-left: 20%;
+        display: flex;
+        text-align: center;
+    }
 }
 /*final do media query*/

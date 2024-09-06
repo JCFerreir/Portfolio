@@ -17,6 +17,22 @@ const MainComeço = () => {
         }
     };
 
+    useEffect(() => {
+        const handleKeyPress = (event) => {
+            if (event.key === 'Enter') {
+                handleConfirm();
+            }
+        };
+
+        // Adiciona o event listener para detectar o pressionamento da tecla Enter
+        document.addEventListener('keydown', handleKeyPress);
+
+        // Remove o event listener quando o componente for desmontado
+        return () => {
+            document.removeEventListener('keydown', handleKeyPress);
+        };
+    }, [name]); // Adiciona 'name' como dependência para atualizar o evento com base no nome
+
     // Comando para usar os efeitos do ScrollReveal
     useEffect(() => {
         const revelar = ScrollReveal({ reset: true });
@@ -55,7 +71,7 @@ const MainComeço = () => {
                         type="button" 
                         className="btn btn-outline-danger btn-começo" 
                         onClick={handleConfirm}>
-                        Confirmar
+                            Confirmar
                     </button>
                 </div>
             </div>

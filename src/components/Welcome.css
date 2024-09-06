@@ -6,7 +6,7 @@
 
 main {
     margin-bottom: 30vh;
-    margin-top: 50vh;
+    margin-top: 40vh;
 }
 
 /*cumprimento*/
@@ -139,6 +139,7 @@ main {
 /*media query*/
 
 @media screen and (max-width: 1020px){
+
     /*cumprimento*/
     .container-cumprimento {
         flex-direction: column;
