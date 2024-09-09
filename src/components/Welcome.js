@@ -82,11 +82,11 @@ const Welcome = () => {
             <section className="sobre-mim" id="sobre-mim">
             <svg className="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1f1f1f" fill-opacity="1" d="M0,64L60,96C120,128,240,192,360,218.7C480,245,600,235,720,192C840,149,960,75,1080,48C1200,21,1320,43,1380,53.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                 <div className="conteudo-sobre-mim">
-                <h1 className="titulo-sobre-mim">Sobre Mim!</h1>
+                <h1 className="titulo-sobre-mim">Olá, sou o Julio!</h1>
 
                     <div className="columns">
                         <div className="texto-sobre-mim">
-                            Sou um programador front-end especializado 
+                            Um programador front-end especializado 
                                 em desenvolvimento de interfaces intuitivas e 
                                 responsivas. Busco constantemente aprimorar 
                                 minhas habilidades para criar soluções web de 
