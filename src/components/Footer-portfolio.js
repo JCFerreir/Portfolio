@@ -14,7 +14,6 @@ const Footer = () => {
                         <ul>
                             <li><a href="https://api.whatsapp.com/send/?phone=5511951526585&text&type=phone_number&app_absent=0"><i class="fa-brands fa-whatsapp"></i></a></li>
                             <li><a href="https://www.linkedin.com/in/julio-cesar-ferreira-93584a261/"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a><i class="fa-regular fa-envelope"></i></a></li>
                         </ul>
                     </nav>
                 </div>

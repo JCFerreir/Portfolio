@@ -47,7 +47,7 @@ const Header = () => {
             <ul>
               <li><a href="#sobre-mim">Sobre mim</a></li>
               <li><a href="#teste">Teste</a></li>
-              <li><a href="#teste">Teste</a></li>
+              <li><a href="#contato">Entre em contato</a></li>
             </ul>
           </nav>
 
@@ -71,7 +71,7 @@ const Header = () => {
                 <li><a href="#sobre-mim">Sobre mim</a></li>
                 <li><a href="#teste">Teste</a></li>
                 <li><a href="#teste">Teste</a></li>
-                <li><a href="#teste">Entre em contato</a></li>
+                <li><a href="#contato">Entre em contato</a></li>
               </ul>
             </nav>
           </div>
