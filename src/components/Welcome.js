@@ -112,7 +112,7 @@ const Welcome = () => {
                 <div className="contato">
                     <form className="form-contato">
                         <fieldset>
-                            <h1 className="titulo-contato">Entre em contato pelo <span className="palavra-contato">Whatsapp</span> :</h1>
+                            <h1 className="titulo-contato">Entre em contato pelo <span className="palavra-contato">Whatsapp</span>:</h1>
 
                             <p>
                                 <label for="name" className="label-contato">Seu <span className="palavra-contato">Nome</span>:</label>

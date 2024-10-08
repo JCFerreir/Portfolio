@@ -168,6 +168,8 @@
     color: #fff;
     font-size: 41px;
     text-align: center;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .palavra-contato{
@@ -194,7 +196,7 @@
 }
 
 .btn-whats button{
-   width: 75vh;
+   width: 77vh;
    margin-top: 4%;
 }
 /*final contato*/
@@ -206,6 +208,7 @@
 
     /*cumprimento*/
     .container-cumprimento {
+        max-width: 300px;
         flex-direction: column;
         padding: 0 8%;
     }
@@ -221,17 +224,17 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-left: 20%;
+        margin-left: 10%;
         margin-bottom: 10px;
-        max-width: 60%;
+        max-width: 80%;
     } 
 
     .all-titulos-cumprimento .titulo-cumprimento{
-        font-size: 25px;
+        font-size: 28px;
     }
 
     .all-titulos-cumprimento .subtitulo-cumprimento{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .all-titulos-cumprimento .btn-cumprimento{
@@ -251,7 +254,7 @@
     }
             
     .titulo-sobre-mim{
-        font-size: 30px;
+        font-size: 28px;
         margin-bottom: 20px;
     }
     
@@ -271,12 +274,29 @@
 
     /*contato*/
 
+
     .titulo-contato{
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .input-contato{
         width: 20%;
+    }
+
+    .form-contato{
+        max-width: 300px;
+    }
+
+    .label-contato{
+        font-size: 25px;
+    }
+
+    .input-contato{
+        height: 1vh;
+    }
+
+    .btn-whats button{
+        max-width: 300px;
     }
 
 }
@@ -303,8 +323,9 @@
             height: 8vh;
         }
 
-        .btn-contato button{
+        .btn-whats button{
             margin-top: 4%;
+            width: 117vh;
          }
 
     }
