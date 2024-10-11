@@ -328,9 +328,10 @@ section.portfolio{
     }
 
     /*sobre mim*/   
+
     .sobre-mim{
         max-width: 300px;
-        margin-left: 15%;
+        margin-left: 20%;
     }
 
     .columns{
