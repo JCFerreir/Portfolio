@@ -46,14 +46,14 @@ const Header = () => {
           <nav className="menu-desktop">
             <ul>
               <li><a href="#sobre-mim">Sobre mim</a></li>
-              <li><a href="#teste">Teste</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#contato">Entre em contato</a></li>
             </ul>
           </nav>
 
           <div className="btn-contato">
             <a href="#">
-              <button>Entre em Contato</button>
+               <div className="code"><i class="fa-solid fa-code"></i></div>
             </a>
           </div>
 
@@ -68,10 +68,9 @@ const Header = () => {
 
             <nav>
               <ul>
-                <li><a href="#sobre-mim">Sobre mim</a></li>
-                <li><a href="#teste">Teste</a></li>
-                <li><a href="#teste">Teste</a></li>
-                <li><a href="#contato">Entre em contato</a></li>
+              <li><a href="#sobre-mim">Sobre mim</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contato">Entre em contato</a></li>
               </ul>
             </nav>
           </div>

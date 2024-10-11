@@ -43,6 +43,23 @@ const Welcome = () => {
         });
     }, []); // O array vazio garante que o efeito só será executado após a montagem do componente
 
+    //Form que manda mensagem para whats
+    const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [text, setText] = useState('');
+
+  const handleWhatsAppSend = () => {
+    if (name && email && text) {
+      const phoneNumber = '+5511951526585';
+      const message = `*NOVO ORÇAMENTO* \nNome: ${name}\nEmail: ${email}\nServiço desejado: ${text}`;
+      const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+      
+      window.open(url, '_blank');
+    } else {
+      alert('Por favor, preencha todos os campos.');
+    }
+  };
+
     return (
         <main>
 
@@ -102,40 +119,86 @@ const Welcome = () => {
             <svg className="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1f1f1f" fill-opacity="1" d="M0,64L60,96C120,128,240,192,360,218.7C480,245,600,235,720,192C840,149,960,75,1080,48C1200,21,1320,43,1380,53.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
             </section>
 
-            <section className="conteudo-portfolio">
+            <section className="conteudo-portfolio" id="portfolio">
                 <div className="interface">
-                    
+                    <h2 className="titulo-portfolio">Meus <span className="palavra-portfolio">Projetos</span>:</h2>
+                    <div className="flex">
+                        <div className="img-port" id="proj1">
+                            <a href="https://jcferreir.github.io/Ju-do-Briga/">
+                                <div className="overlay">
+                                    Ju do Briga
+                                </div>
+                            </a>
+                        </div>
+                        <div className="img-port" id="proj2">
+                            <div className="overlay">
+                                Futuros Projetos
+                            </div>    
+                        </div>
+                        <div className="img-port" id="proj3">
+                            <div className="overlay">
+                                Futuros Projetos
+                            </div>    
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section className="conteudo-contato" id="contato">
-                <div className="contato">
-                    <form className="form-contato">
-                        <fieldset>
-                            <h1 className="titulo-contato">Entre em contato pelo <span className="palavra-contato">Whatsapp</span>:</h1>
+      <div className="contato">
+        <form className="form-contato" onSubmit={(e) => e.preventDefault()}>
+          <fieldset>
+            <h1 className="titulo-contato">Entre em contato pelo <span className="palavra-contato">Whatsapp</span>:</h1>
 
-                            <p>
-                                <label for="name" className="label-contato">Seu <span className="palavra-contato">Nome</span>:</label>
-                                <input type="name" className="input-contato" placeholder="Nome" id="name"/>                            
-                            </p>
+            <p>
+              <label htmlFor="name" className="label-contato">Seu <span className="palavra-contato">Nome</span>:</label>
+              <input
+                type="text"
+                className="input-contato"
+                placeholder="Nome"
+                id="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </p>
 
-                            <p>
-                                <label for="email" className="label-contato">Seu <span className="palavra-contato">Email</span>:</label>
-                                <input type="email" placeholder="Email" className="input-contato" id="email" aria-describedby="emailHelp"/>                            
-                            </p>
+            <p>
+              <label htmlFor="email" className="label-contato">Seu <span className="palavra-contato">Email</span>:</label>
+              <input
+                type="email"
+                placeholder="Email"
+                className="input-contato"
+                id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </p>
 
-                            <p>
-                                <label for="text" className="label-contato">Tipo de serviço de <span className="palavra-contato">front-end</span> desejado:</label>
-                                <input type="text" placeholder="Serviço" className="input-contato" aria-label="Server" id="text"/>
-                            </p>
+            <p>
+              <label htmlFor="text" className="label-contato">Tipo de serviço de <span className="palavra-contato">front-end</span> desejado:</label>
+              <input
+                type="text"
+                placeholder="Serviço"
+                className="input-contato"
+                id="text"
+                value={text}
+                onChange={(e) => setText(e.target.value)}
+              />
+            </p>
 
-                            <div className="btn-whats">
-                                <button type="button" className="btn btn-outline-danger">Enviar mensagem</button>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
-            </section>
+            <div className="btn-whats">
+              <button
+                type="button"
+                className="btn btn-outline-danger"
+                onClick={handleWhatsAppSend}
+              >
+                Enviar mensagem
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
         </main>
     );
 };

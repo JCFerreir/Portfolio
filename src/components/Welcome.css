@@ -149,6 +149,91 @@
 }
 /*final about me*/
 
+/*portfolio*/
+.conteudo-portfolio{
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 35vh;
+}
+
+.flex{
+    display: flex;
+    gap: 80px;
+}
+
+section.portfolio{
+    padding: 80px 4%;
+}
+
+.titulo-portfolio{
+    max-width: 1080px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 41px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.palavra-portfolio{
+    color: var(--vinho-color);
+    font-weight: 500;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-color: var(--vinho-color);
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 2s;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a8;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+#proj1{
+    background-image: url(/public/judobriga.png);
+}
+
+#proj2{
+    background-image: url(/public/portfolio.png);
+}
+
+#proj3{
+    background-image: url(/public/portfolio.png);
+}
+
+/*final do portfolio*/
+
 /*contato*/
 .conteudo-contato{
     max-width: 1080px;
@@ -269,7 +354,25 @@
     }
     
     .imagem-sobre-mim img{
-        max-width: 250px;
+        max-width: 200px;
+        margin-left: 25px;
+    }
+
+    /*portfolio*/
+
+    .titulo-portfolio{
+        font-size: 28px;
+    }
+
+    .img-port{
+        width: 200px;
+        height: 300px;    
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /*contato*/
