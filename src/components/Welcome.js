@@ -124,7 +124,7 @@ const Welcome = () => {
                     <h2 className="titulo-portfolio">Meus <span className="palavra-portfolio">Projetos</span>:</h2>
                     <div className="flex">
                         <div className="img-port" id="proj1">
-                            <a href="https://jcferreir.github.io/Ju-do-Briga/">
+                            <a href="https://judobriga.vercel.app/">
                                 <div className="overlay">
                                     Ju do Briga
                                 </div>
